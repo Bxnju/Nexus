@@ -2,8 +2,7 @@
 
 Laboratorio local de arquitectura de software para demostrar una plataforma compuesta por dos Shells, un MFE orquestador y cinco Micro Frontends de negocio independientes.
 
-> **Creador:** el usuario de este workspace  
-> **Versión del proyecto:** 0.0.0  
+> **Creador:** Andres Benjumea
 > **Estado:** laboratorio local en evolución
 
 Este documento concentra la información necesaria para instalar, ejecutar, comprobar, detener y mantener el proyecto. El alcance es técnico y arquitectónico; la interfaz visual se considera reemplazable y no forma parte de las decisiones descritas aquí.
