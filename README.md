@@ -29,7 +29,7 @@ No requiere backend, Docker, servicios de pago ni credenciales privadas. Los dat
 ## 2. Clonar y preparar el repositorio
 
 ```powershell
-git clone <URL_DEL_REPOSITORIO> nexus-platform-lab
+git clone https://github.com/Bxnju/Nexus nexus-platform-lab
 cd nexus-platform-lab
 git pull --ff-only
 npm ci
@@ -50,7 +50,7 @@ El proyecto fue preparado para:
 - Angular `21`.
 - Angular CLI `21.2.27`.
 
-La versión de Node también está indicada en [.nvmrc](C:/Users/bxnju/lab-microfrontends/.nvmrc).
+La versión de Node también está indicada en [.nvmrc](https://github.com/Bxnju/Nexus/blob/master/.nvmrc).
 
 Comprobar versiones:
 
@@ -63,7 +63,7 @@ npx ng version
 Todos los comandos de este documento se ejecutan desde la raíz:
 
 ```powershell
-cd C:\Users\bxnju\lab-microfrontends
+cd ./nexus-platform-lab
 ```
 
 ---
@@ -73,11 +73,11 @@ cd C:\Users\bxnju\lab-microfrontends
 Desde la raíz del workspace:
 
 ```powershell
-cd C:\Users\bxnju\lab-microfrontends
+cd ./nexus-platform-lab
 npm ci
 ```
 
-La instalación utiliza [package.json](C:/Users/bxnju/lab-microfrontends/package.json) y [package-lock.json](C:/Users/bxnju/lab-microfrontends/package-lock.json).
+La instalación utiliza [package.json](https://github.com/Bxnju/Nexus/blob/master/package.json) y [package-lock.json](https://github.com/Bxnju/Nexus/blob/master/package-lock.json).
 
 No es necesario instalar Angular CLI globalmente. Se recomienda utilizar siempre `npx ng` o los scripts npm del proyecto.
 
@@ -155,7 +155,7 @@ nexus-platform-lab/
 Todos se ejecutan desde:
 
 ```powershell
-cd C:\Users\bxnju\lab-microfrontends
+cd nexus-platform-lab
 ```
 
 ### 7.1 Instalación
@@ -205,7 +205,7 @@ npm run portal -- admin
 
 ### 7.5 Laboratorio completo
 
-Inicia los dos Shells y todos los remotes:
+Inicia los dos Shells y todos los remotes (CON ESTE LEVANTAMOS EL LABORATORIO COMPLETO):
 
 ```powershell
 npm run lab:start
@@ -244,7 +244,7 @@ npm run lab:sync -- C:\ruta\del\repositorio
 Ejemplo:
 
 ```powershell
-npm run lab:sync -- C:\Users\bxnju\repos\investments
+npm run lab:sync -- C:\Users\usuario\repos\investments
 ```
 
 El script:
@@ -265,41 +265,41 @@ npm run lab:sync -- C:\repos\workspace-hub C:\repos\documents
 
 ## 8. Ejecución recomendada
 
+### Ejecutar todo en una sola terminal
+
+```powershell
+cd C:\Users\usuario\nexus-platform-lab
+npm run lab:start
+npm run lab:status
+```
+
 ### Ejecutar ambos portales
 
 Terminal 1:
 
 ```powershell
-cd C:\Users\bxnju\lab-microfrontends
+cd C:\Users\usuario\nexus-platform-lab
 npm run portal:cliente
 ```
 
 Terminal 2:
 
 ```powershell
-cd C:\Users\bxnju\lab-microfrontends
+cd C:\Users\bxnju\nexus-platform-lab
 npm run portal:admin
 ```
 
 Comprobar desde una tercera terminal:
 
 ```powershell
-cd C:\Users\bxnju\lab-microfrontends
-npm run lab:status
-```
-
-### Ejecutar todo en una sola terminal
-
-```powershell
-cd C:\Users\bxnju\lab-microfrontends
-npm run lab:start
+cd C:\Users\usuario\nexus-platform-lab
 npm run lab:status
 ```
 
 ### Detener el laboratorio
 
 ```powershell
-cd C:\Users\bxnju\lab-microfrontends
+cd C:\Users\usuario\nexus-platform-lab
 npm run lab:stop
 npm run lab:status
 ```
@@ -341,17 +341,17 @@ La solución utiliza:
 
 Configuraciones:
 
-- [federation.config.js](C:/Users/bxnju/lab-microfrontends/federation.config.js): CustomerPortal.
-- [projects/admin-portal/federation.config.js](C:/Users/bxnju/lab-microfrontends/projects/admin-portal/federation.config.js): AdminPortal.
-- [projects/workspace-hub/federation.config.js](C:/Users/bxnju/lab-microfrontends/projects/workspace-hub/federation.config.js): WorkspaceHub.
+- [federation.config.js](https://github.com/Bxnju/Nexus/blob/master/federation.config.js): CustomerPortal.
+- [projects/admin-portal/federation.config.js](https://github.com/Bxnju/Nexus/blob/master/projects/admin-portal/federation.config.js): AdminPortal.
+- [projects/workspace-hub/federation.config.js](https://github.com/Bxnju/Nexus/blob/master/projects/workspace-hub/federation.config.js): WorkspaceHub.
 - Configuraciones equivalentes en cada remote.
 
 Manifest de hosts:
 
-- [public/federation.manifest.json](C:/Users/bxnju/lab-microfrontends/public/federation.manifest.json).
-- [projects/admin-portal/public/federation.manifest.json](C:/Users/bxnju/lab-microfrontends/projects/admin-portal/public/federation.manifest.json).
+- [public/federation.manifest.json](https://github.com/Bxnju/Nexus/blob/master/public/federation.manifest.json).
+- [projects/admin-portal/public/federation.manifest.json](https://github.com/Bxnju/Nexus/blob/master/projects/admin-portal/public/federation.manifest.json).
 
-El registro funcional está en [config/mfe-registry.json](C:/Users/bxnju/lab-microfrontends/config/mfe-registry.json). Sus puertos y URLs deben coincidir con las aplicaciones reales.
+El registro funcional está en [config/mfe-registry.json](https://github.com/Bxnju/Nexus/blob/master/config/mfe-registry.json). Sus puertos y URLs deben coincidir con las aplicaciones reales.
 
 La cadena de composición es:
 
@@ -372,7 +372,7 @@ No se usan iframes, `postMessage` ni Shadow DOM para la composición. Los manife
 
 Archivo:
 
-[config/portal-config.customer.json](C:/Users/bxnju/lab-microfrontends/config/portal-config.customer.json)
+[config/portal-config.customer.json](https://github.com/Bxnju/Nexus/blob/master/config/portal-config.customer.json)
 
 Módulos habilitados:
 
@@ -386,7 +386,7 @@ Módulos habilitados:
 
 Archivo:
 
-[config/portal-config.admin.json](C:/Users/bxnju/lab-microfrontends/config/portal-config.admin.json)
+[config/portal-config.admin.json](https://github.com/Bxnju/Nexus/blob/master/config/portal-config.admin.json)
 
 Módulos habilitados:
 
@@ -403,7 +403,7 @@ Investments está disponible como remote del Workspace Hub, aunque no aparece co
 
 Los contratos se encuentran en:
 
-[shared/contracts/src/index.ts](C:/Users/bxnju/lab-microfrontends/shared/contracts/src/index.ts)
+[shared/contracts/src/index.ts](https://github.com/Bxnju/Nexus/blob/master/shared/contracts/src/index.ts)
 
 Incluyen:
 
@@ -430,7 +430,7 @@ Flujo:
 5. Documents recibe el contexto de cuenta.
 6. Cada MFE actualiza su propia información sin importar la implementación interna de otro MFE.
 
-La implementación técnica utiliza `CustomEvent` en la misma ventana, porque los MFEs se montan como componentes Angular federados. No hay contextos aislados ni `postMessage`. La decisión está documentada en [docs/COMMUNICATION.md](C:/Users/bxnju/lab-microfrontends/docs/COMMUNICATION.md).
+La implementación técnica utiliza `CustomEvent` en la misma ventana, porque los MFEs se montan como componentes Angular federados. No hay contextos aislados ni `postMessage`. La decisión está documentada en [docs/COMMUNICATION.md](https://github.com/Bxnju/Nexus/blob/master/docs/COMMUNICATION.md).
 
 ---
 
@@ -662,7 +662,7 @@ Revisar:
 - Que `remoteEntry.json` exista en el servidor correspondiente.
 - Que las versiones Angular sean compatibles.
 
-La configuración Native Federation se compila correctamente. En desarrollo, cada remote conserva su propio servidor y proceso, pero la composición se realiza mediante montaje directo federado. Esta decisión y sus trade-offs están explicados en [docs/ARCHITECTURE.md](C:/Users/bxnju/lab-microfrontends/docs/ARCHITECTURE.md).
+La configuración Native Federation se compila correctamente. En desarrollo, cada remote conserva su propio servidor y proceso, pero la composición se realiza mediante montaje directo federado. Esta decisión y sus trade-offs están explicados en [docs/ARCHITECTURE.md](https://github.com/Bxnju/Nexus/blob/master/ARCHITECTURE.md).
 
 ---
 
@@ -691,12 +691,12 @@ npm run lab:status
 
 ## 19. Documentación adicional
 
-- [Arquitectura](C:/Users/bxnju/lab-microfrontends/docs/ARCHITECTURE.md)
-- [Comunicación](C:/Users/bxnju/lab-microfrontends/docs/COMMUNICATION.md)
-- [Runbook operativo](C:/Users/bxnju/lab-microfrontends/docs/RUNBOOK.md)
-- [Workshop de arquitectura](C:/Users/bxnju/lab-microfrontends/docs/WORKSHOP.md)
-- [Contratos compartidos](C:/Users/bxnju/lab-microfrontends/shared/contracts/src/index.ts)
-- [Registro de remotes](C:/Users/bxnju/lab-microfrontends/config/mfe-registry.json)
+- [Arquitectura](https://github.com/Bxnju/Nexus/blob/master/docs/ARCHITECTURE.md)
+- [Comunicación](https://github.com/Bxnju/Nexus/blob/master/docs/COMMUNICATION.md)
+- [Runbook operativo](https://github.com/Bxnju/Nexus/blob/master/docs/RUNBOOK.md)
+- [Workshop de arquitectura](https://github.com/Bxnju/Nexus/blob/master/docs/WORKSHOP.md)
+- [Contratos compartidos](https://github.com/Bxnju/Nexus/blob/master/shared/contracts/src/index.ts)
+- [Registro de remotes](https://github.com/Bxnju/Nexus/blob/master/config/mfe-registry.json)
 
 ---
 
@@ -716,7 +716,7 @@ npm run lab:status
 ## 21. Resumen rápido
 
 ```powershell
-cd C:\Users\bxnju\lab-microfrontends
+cd nexus-platform-lab
 npm ci
 npm run build:all
 npm run lab:start
