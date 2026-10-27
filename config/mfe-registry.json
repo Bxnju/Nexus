@@ -1,0 +1,50 @@
+{
+  "contractVersion": "1.0.0",
+  "remotes": [
+    {
+      "id": "account-switcher",
+      "name": "AccountSwitcher",
+      "remoteEntry": "http://localhost:4203/remoteEntry.json",
+      "exposedModule": "./Component",
+      "port": 4203,
+      "enabled": true,
+      "description": "Seleccion de la cuenta de trabajo"
+    },
+    {
+      "id": "investments",
+      "name": "Investments",
+      "remoteEntry": "http://localhost:4204/remoteEntry.json",
+      "exposedModule": "./Component",
+      "port": 4204,
+      "enabled": true,
+      "description": "Productos y rendimiento de inversiones"
+    },
+    {
+      "id": "documents",
+      "name": "Documents",
+      "remoteEntry": "http://localhost:4205/remoteEntry.json",
+      "exposedModule": "./Component",
+      "port": 4205,
+      "enabled": true,
+      "description": "Documentos asociados a la cuenta"
+    },
+    {
+      "id": "movements",
+      "name": "Movements",
+      "remoteEntry": "http://localhost:4206/remoteEntry.json",
+      "exposedModule": "./Component",
+      "port": 4206,
+      "enabled": true,
+      "description": "Actividad y movimientos de la cuenta"
+    },
+    {
+      "id": "summary",
+      "name": "Summary",
+      "remoteEntry": "http://localhost:4207/remoteEntry.json",
+      "exposedModule": "./Component",
+      "port": 4207,
+      "enabled": true,
+      "description": "Resumen financiero de la cuenta"
+    }
+  ]
+}

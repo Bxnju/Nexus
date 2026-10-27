@@ -1,0 +1,11 @@
+{
+  "portalId": "customer",
+  "displayName": "Customer Portal",
+  "modules": [
+    { "id": "account-switcher", "enabled": true },
+    { "id": "investments", "enabled": true },
+    { "id": "documents", "enabled": true },
+    { "id": "movements", "enabled": true },
+    { "id": "summary", "enabled": true }
+  ]
+}

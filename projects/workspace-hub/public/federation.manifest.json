@@ -1,0 +1,7 @@
+{
+  "account-switcher": "http://localhost:4203/remoteEntry.json",
+  "documents": "http://localhost:4205/remoteEntry.json",
+  "investments": "http://localhost:4204/remoteEntry.json",
+  "movements": "http://localhost:4206/remoteEntry.json",
+  "summary": "http://localhost:4207/remoteEntry.json"
+}
