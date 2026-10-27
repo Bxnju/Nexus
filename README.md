@@ -1,6 +1,6 @@
 # Nexus Platform Lab
 
-Local Angular microfrontend laboratory built with [Native Federation](https://github.com/angular-architects/module-federation-plugin).
+Local Angular microfrontend laboratory built with [Native Federation](https://native-federation.com/).
 
 Repository: <https://github.com/Bxnju/Nexus>
 
